@@ -1,5 +1,7 @@
 package com.praktikunandroid7live.model
 
+import com.squareup.moshi.Json
+
 data class User(
         val page: Int,
         val per_page: Int,
@@ -20,4 +22,3 @@ data class UserData(
         @field:Json(name = "@avatar")
         val avatar: String
 )
-}
