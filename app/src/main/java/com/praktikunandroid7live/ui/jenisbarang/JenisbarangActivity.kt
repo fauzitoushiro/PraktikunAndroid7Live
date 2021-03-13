@@ -1,5 +1,6 @@
 package com.praktikunandroid7live.ui.jenisbarang
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -26,6 +27,11 @@ class JenisbarangActivity : AppCompatActivity() {
         binding.progressBarJenisbarang.visibility = View.VISIBLE
 
         getListJenisbarang()
+
+        binding.btTambahJenisbarang.setOnClickListener{
+            val intent = Intent(this, JenisbarangPostActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
